@@ -1,0 +1,8 @@
+/* Write your T-SQL query statement below */
+SELECT 
+    e.name, 
+    b.bonus 
+FROM Employee AS e 
+    LEFT JOIN Bonus as b
+    ON e.empId = b.empID
+    WHERE bonus < 1000 or bonus is NULL
